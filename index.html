@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cloud Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page title -->
+        <h1>Word Cloud Generator</h1>
+        
+        <!-- File picker input -->
+        <div class="file-picker">
+            <label for="file-input">Choose Excel File</label>
+            <input type="file" id="file-input" accept=".xlsx,.xls">
+        </div>
+        
+        <!-- Word cloud canvas -->
+        <div class="wordcloud-container">
+            <canvas id="wordcloud-canvas"></canvas>
+            <div id="tooltip" class="tooltip"></div>
+        </div>
+    </div>
+    
+    <!-- External libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/timdream/wordcloud2.js@master/src/wordcloud2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

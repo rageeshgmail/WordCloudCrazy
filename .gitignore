@@ -1,0 +1,19 @@
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# CSV files (if you don't want to commit sample data)
+# *.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
